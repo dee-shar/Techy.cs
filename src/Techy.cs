@@ -16,7 +16,7 @@ namespace TechyApi
 
         public async Task<string> GetPhrase()
         {
-            var response = await httpClient.GetAsync($"{apiUrl}/api/json");
+            var response = await httpClient.GetAsync($"{apiUrl}/json");
             return await response.Content.ReadAsStringAsync();
         }
     }
